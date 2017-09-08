@@ -1,0 +1,20 @@
+Script started on Thu 16 Mar 2017 11:46:45 AM CDT
+lamsalab@quine:cs-214$ cat signed_file.bin [7P./encryptio[C[Cgcc encryption.c -o encryption -lsodium -Wall -g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat signed_file.bin gcc encryption.c -o encryption -lsodium -Wall -g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat signed_file.bin [7P./encryptio[C[Cgcc encryption.c -o encryption -lsodium -Wall -g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat signed_file.bin [7P./encryptio[C[Cgcc encryption.c -o encryption -lsodium -Wall -g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[28Pcat signed_file.bin [7P./encryptio[C[Cgcc encryption.c -o encryption -lsodium -Wall -g[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@r[1@y[1@t[1P[1@p[1@t[1@o[1@g[1@r[1@a[1@p[1@h[1@y[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@c[1@r[1@y[1@p[1@t[1@o[1@g[1@r[1@a[1@p[1@h[1@y
+lamsalab@quine:cs-214$ ./cryptography 
+lamsalab@quine:cs-214$ ./cryptography gcc cryptography.c -o cryptography -lsodium -Wall -g
+lamsalab@quine:cs-214$ gcc cryptography.c -o cryptography -lsodium -Wall -g[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./cryptography [K
+lamsalab@quine:cs-214$ cd sender
+lamsalab@quine:sender$ cd sender./cryptography gcc cryptography.c -o cryptography -lsodium -Wall -g[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@e[1@n[1@c[1@r[1@y[1@p[4@tion[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@e[1@m[1P[1@n[1@c[1@r[1@y[1@p[4@tion
+lamsalab@quine:sender$ ./encryption 
+0
+ 0
+ lamsalab@quine:sender$ cd ..
+lamsalab@quine:cs-214$ cd receiver/
+lamsalab@quine:receiver$ cd receiver/..[K./encryption gcc encryption.c -o encryption -lsodium -Wall -g[1P[1P[1@d[1@e[1P[1P[1@d[1@e
+lamsalab@quine:receiver$ ./decryption 
+0
+0
+lamsalab@quine:receiver$ diff message.txt validation.txt
+lamsalab@quine:receiver$ exit
+
+Script done on Thu 16 Mar 2017 11:50:45 AM CDT

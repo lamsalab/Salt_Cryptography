@@ -1,0 +1,464 @@
+=== Tue Feb 28 22:52:09 CST 2017 === starting
+=== Tue Feb 28 22:52:09 CST 2017 === hostname
+dertouzos
+=== Tue Feb 28 22:52:09 CST 2017 === uname -a
+Linux dertouzos 3.16.0-4-amd64 #1 SMP Debian 3.16.7-ckt25-2+deb8u3 (2016-07-02) x86_64 GNU/Linux
+=== Tue Feb 28 22:52:09 CST 2017 === uname -M
+uname: invalid option -- 'M'
+Try 'uname --help' for more information.
+=== Tue Feb 28 22:52:09 CST 2017 === uname -F
+uname: invalid option -- 'F'
+Try 'uname --help' for more information.
+=== Tue Feb 28 22:52:09 CST 2017 === /usr/sbin/lscfg | grep proc
+./do: 57: ./do: /usr/sbin/lscfg: not found
+=== Tue Feb 28 22:52:09 CST 2017 === /usr/sbin/lsattr -El proc0
+./do: 59: ./do: /usr/sbin/lsattr: not found
+=== Tue Feb 28 22:52:09 CST 2017 === cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 4
+model name	: Intel(R) Pentium(R) D CPU 3.00GHz
+stepping	: 7
+microcode	: 0x3
+cpu MHz		: 2999.873
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 5
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc pebs bts nopl pni dtes64 monitor ds_cpl est cid cx16 xtpr lahf_lm
+bogomips	: 5999.74
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 15
+model		: 4
+model name	: Intel(R) Pentium(R) D CPU 3.00GHz
+stepping	: 7
+microcode	: 0x3
+cpu MHz		: 2999.873
+cache size	: 1024 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 5
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx lm constant_tsc pebs bts nopl pni dtes64 monitor ds_cpl est cid cx16 xtpr lahf_lm
+bogomips	: 5999.74
+clflush size	: 64
+cache_alignment	: 128
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+=== Tue Feb 28 22:52:09 CST 2017 === cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq
+cat: /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq: No such file or directory
+=== Tue Feb 28 22:52:09 CST 2017 === cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+cat: /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq: No such file or directory
+=== Tue Feb 28 22:52:09 CST 2017 === cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+cat: /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq: No such file or directory
+=== Tue Feb 28 22:52:09 CST 2017 === cat /sys/devices/system/cpu/cpu0/clock_tick
+cat: /sys/devices/system/cpu/cpu0/clock_tick: No such file or directory
+=== Tue Feb 28 22:52:09 CST 2017 === sysctl hw.model
+./do: 71: ./do: sysctl: not found
+=== Tue Feb 28 22:52:09 CST 2017 === sysctl machdep.tsc_freq
+./do: 73: ./do: sysctl: not found
+=== Tue Feb 28 22:52:09 CST 2017 === /usr/sbin/psrinfo -v
+./do: 75: ./do: /usr/sbin/psrinfo: not found
+=== Tue Feb 28 22:52:09 CST 2017 === building okcompilers
+=== Tue Feb 28 22:52:09 CST 2017 === checking gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:10 CST 2017 === success: gcc -m64 -O3 -fomit-frame-pointer -funroll-loops is ok
+=== Tue Feb 28 22:52:10 CST 2017 === checking gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:11 CST 2017 === success: gcc -m64 -O -fomit-frame-pointer is ok
+=== Tue Feb 28 22:52:11 CST 2017 === checking gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:12 CST 2017 === success: gcc -m64 -fomit-frame-pointer is ok
+=== Tue Feb 28 22:52:12 CST 2017 === checking gcc -m32 -O3 -fomit-frame-pointer -funroll-loops
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:12 CST 2017 === checking gcc -m32 -O -fomit-frame-pointer
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:12 CST 2017 === checking gcc -m32 -fomit-frame-pointer
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:13 CST 2017 === checking spu-gcc -mstdmain -march=cell -O3 -funroll-loops -fomit-frame-pointer -Drandom=rand -Dsrandom=srand
+./test-okc: 4: ./test-okc: spu-gcc: not found
+=== Tue Feb 28 22:52:13 CST 2017 === checking spu-gcc -mstdmain -march=cell -O -fomit-frame-pointer -Drandom=rand -Dsrandom=srand
+./test-okc: 4: ./test-okc: spu-gcc: not found
+=== Tue Feb 28 22:52:13 CST 2017 === checking g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:14 CST 2017 === success: g++ -m64 -O3 -fomit-frame-pointer -funroll-loops is ok
+=== Tue Feb 28 22:52:14 CST 2017 === checking g++ -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:15 CST 2017 === success: g++ -m64 -O -fomit-frame-pointer is ok
+=== Tue Feb 28 22:52:15 CST 2017 === checking g++ -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:16 CST 2017 === success: g++ -m64 -fomit-frame-pointer is ok
+=== Tue Feb 28 22:52:16 CST 2017 === checking g++ -m32 -O3 -fomit-frame-pointer -funroll-loops
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libstdc++.so when searching for -lstdc++
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libstdc++.a when searching for -lstdc++
+/usr/bin/ld: cannot find -lstdc++
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:16 CST 2017 === checking g++ -m32 -O -fomit-frame-pointer
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libstdc++.so when searching for -lstdc++
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libstdc++.a when searching for -lstdc++
+/usr/bin/ld: cannot find -lstdc++
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:16 CST 2017 === checking g++ -m32 -fomit-frame-pointer
+/usr/bin/ld: cannot find crt1.o: No such file or directory
+/usr/bin/ld: cannot find crti.o: No such file or directory
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libstdc++.so when searching for -lstdc++
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libstdc++.a when searching for -lstdc++
+/usr/bin/ld: cannot find -lstdc++
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find -lc
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc_s.so when searching for -lgcc_s
+/usr/bin/ld: cannot find -lgcc_s
+/usr/bin/ld: skipping incompatible /usr/lib/gcc/x86_64-linux-gnu/4.9/libgcc.a when searching for -lgcc
+/usr/bin/ld: cannot find -lgcc
+/usr/bin/ld: cannot find crtn.o: No such file or directory
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:17 CST 2017 === checking spu-g++ -mstdmain -march=cell -O3 -funroll-loops -fomit-frame-pointer -Drandom=rand -Dsrandom=srand
+./test-okc: 4: ./test-okc: spu-g++: not found
+=== Tue Feb 28 22:52:17 CST 2017 === checking spu-g++ -mstdmain -march=cell -O -fomit-frame-pointer -Drandom=rand -Dsrandom=srand
+./test-okc: 4: ./test-okc: spu-g++: not found
+=== Tue Feb 28 22:52:17 CST 2017 === checking compatibility with gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:17 CST 2017 === checking gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:18 CST 2017 === success: gcc -m64 -O3 -fomit-frame-pointer -funroll-loops is compatible
+=== Tue Feb 28 22:52:18 CST 2017 === checking gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:18 CST 2017 === success: gcc -m64 -O -fomit-frame-pointer is compatible
+=== Tue Feb 28 22:52:18 CST 2017 === checking gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:19 CST 2017 === success: gcc -m64 -fomit-frame-pointer is compatible
+=== Tue Feb 28 22:52:19 CST 2017 === checking compatibility with gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:19 CST 2017 === checking g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:20 CST 2017 === success: g++ -m64 -O3 -fomit-frame-pointer -funroll-loops is compatible
+=== Tue Feb 28 22:52:20 CST 2017 === checking g++ -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:20 CST 2017 === success: g++ -m64 -O -fomit-frame-pointer is compatible
+=== Tue Feb 28 22:52:20 CST 2017 === checking g++ -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:21 CST 2017 === success: g++ -m64 -fomit-frame-pointer is compatible
+=== Tue Feb 28 22:52:21 CST 2017 === checking -lm
+=== Tue Feb 28 22:52:21 CST 2017 === checking -lnsl
+=== Tue Feb 28 22:52:22 CST 2017 === checking -lsocket
+/usr/bin/ld: cannot find -lsocket
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:22 CST 2017 === checking -lrt
+=== Tue Feb 28 22:52:22 CST 2017 === checking archiver ar
+=== Tue Feb 28 22:52:23 CST 2017 === success: archiver ar is ok
+=== Tue Feb 28 22:52:24 CST 2017 === building cpuid
+=== Tue Feb 28 22:52:24 CST 2017 === Trying x86.c with gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+GenuineIntel-00000f47-bfebfbff
+=== Tue Feb 28 22:52:24 CST 2017 === building inttypes
+=== Tue Feb 28 22:52:25 CST 2017 === amd64 trying signed char as int8 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:25 CST 2017 === amd64 trying short as int16 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:25 CST 2017 === amd64 trying int as int32 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:26 CST 2017 === amd64 trying int as int32 under gcc -m64 -O -fomit-frame-pointer...
+=== Tue Feb 28 22:52:26 CST 2017 === amd64 trying long long as int64 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:26 CST 2017 === amd64 trying long long as int64 under gcc -m64 -O -fomit-frame-pointer...
+=== Tue Feb 28 22:52:26 CST 2017 === amd64 trying unsigned char as uint8 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:27 CST 2017 === amd64 trying unsigned short as uint16 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:27 CST 2017 === amd64 trying unsigned int as uint32 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:27 CST 2017 === amd64 trying unsigned long long as uint64 under gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:28 CST 2017 === building cpucycles
+=== Tue Feb 28 22:52:28 CST 2017 === Trying amd64tscfreq.c with gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+cpucycles-impl.o: In function `cpucycles_amd64tscfreq_persecond':
+cpucycles-impl.c:(.text+0x3a): undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:29 CST 2017 === Trying amd64tscfreq.c with gcc -m64 -O -fomit-frame-pointer...
+cpucycles-impl.o: In function `cpucycles_amd64tscfreq_persecond':
+cpucycles-impl.c:(.text+0x3d): undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:29 CST 2017 === Trying amd64tscfreq.c with gcc -m64 -fomit-frame-pointer...
+cpucycles-impl.o: In function `cpucycles_amd64tscfreq_persecond':
+cpucycles-impl.c:(.text+0x4a): undefined reference to `sysctlbyname'
+collect2: error: ld returned 1 exit status
+=== Tue Feb 28 22:52:30 CST 2017 === Trying amd64cpuinfo.c with gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+amd64cpuinfo 2999873000 2998770491 173 105 112 105 105 113 105 105 120 112 105 113 105 105 105 112 105 105 113 105 105 105 112 105 105 113 105 105 105 112 105 105 113 105 105 105 112 105 105 113 105 105 105 112 105 105 113 105 105 105 112 105 105 113 105 105 105 112 105 105 113 105 105 105
+=== Tue Feb 28 22:52:31 CST 2017 === Success. Using amd64cpuinfo.c.
+=== Tue Feb 28 22:52:31 CST 2017 === building randombytes
+=== Tue Feb 28 22:52:31 CST 2017 === Trying devurandom.c with gcc -m64 -O3 -fomit-frame-pointer -funroll-loops...
+=== Tue Feb 28 22:52:31 CST 2017 === Success. Using devurandom.c.
+=== Tue Feb 28 22:52:32 CST 2017 === amd64 crypto_verify/16
+=== Tue Feb 28 22:52:32 CST 2017 === amd64 crypto_verify/16/ref
+=== Tue Feb 28 22:52:32 CST 2017 === amd64 crypto_verify/16/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:35 CST 2017 === amd64 crypto_verify/16/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:35 CST 2017 === amd64 crypto_verify/16/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:36 CST 2017 === amd64 crypto_verify/16/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:37 CST 2017 === amd64 crypto_verify/16 measuring
+=== Tue Feb 28 22:52:38 CST 2017 === amd64 crypto_verify/32
+=== Tue Feb 28 22:52:38 CST 2017 === amd64 crypto_verify/32/ref
+=== Tue Feb 28 22:52:38 CST 2017 === amd64 crypto_verify/32/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:40 CST 2017 === amd64 crypto_verify/32/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:40 CST 2017 === amd64 crypto_verify/32/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:42 CST 2017 === amd64 crypto_verify/32/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:43 CST 2017 === amd64 crypto_verify/32 measuring
+=== Tue Feb 28 22:52:43 CST 2017 === amd64 crypto_core/hsalsa20
+=== Tue Feb 28 22:52:43 CST 2017 === amd64 crypto_core/hsalsa20/ref
+=== Tue Feb 28 22:52:44 CST 2017 === amd64 crypto_core/hsalsa20/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:47 CST 2017 === amd64 crypto_core/hsalsa20/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:48 CST 2017 === amd64 crypto_core/hsalsa20/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:49 CST 2017 === amd64 crypto_core/hsalsa20/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:50 CST 2017 === amd64 crypto_core/hsalsa20/ref2
+=== Tue Feb 28 22:52:51 CST 2017 === amd64 crypto_core/hsalsa20/ref2 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:52:53 CST 2017 === amd64 crypto_core/hsalsa20/ref2 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:52:55 CST 2017 === amd64 crypto_core/hsalsa20/ref2 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:52:56 CST 2017 === amd64 crypto_core/hsalsa20 measuring
+=== Tue Feb 28 22:52:56 CST 2017 === amd64 crypto_core/salsa20
+=== Tue Feb 28 22:52:56 CST 2017 === amd64 crypto_core/salsa20/ref
+=== Tue Feb 28 22:52:56 CST 2017 === amd64 crypto_core/salsa20/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:00 CST 2017 === amd64 crypto_core/salsa20/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:00 CST 2017 === amd64 crypto_core/salsa20/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:53:01 CST 2017 === amd64 crypto_core/salsa20/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:53:02 CST 2017 === amd64 crypto_core/salsa20 measuring
+=== Tue Feb 28 22:53:03 CST 2017 === amd64 crypto_core/salsa2012
+=== Tue Feb 28 22:53:03 CST 2017 === amd64 crypto_core/salsa2012/ref
+=== Tue Feb 28 22:53:03 CST 2017 === amd64 crypto_core/salsa2012/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:07 CST 2017 === amd64 crypto_core/salsa2012/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:07 CST 2017 === amd64 crypto_core/salsa2012/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:53:08 CST 2017 === amd64 crypto_core/salsa2012/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:53:09 CST 2017 === amd64 crypto_core/salsa2012 measuring
+=== Tue Feb 28 22:53:09 CST 2017 === amd64 crypto_core/salsa208
+=== Tue Feb 28 22:53:10 CST 2017 === amd64 crypto_core/salsa208/ref
+=== Tue Feb 28 22:53:10 CST 2017 === amd64 crypto_core/salsa208/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:15 CST 2017 === amd64 crypto_core/salsa208/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:15 CST 2017 === amd64 crypto_core/salsa208/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:53:16 CST 2017 === amd64 crypto_core/salsa208/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:53:17 CST 2017 === amd64 crypto_core/salsa208 measuring
+=== Tue Feb 28 22:53:17 CST 2017 === amd64 crypto_hashblocks/sha256
+=== Tue Feb 28 22:53:18 CST 2017 === amd64 crypto_hashblocks/sha256/inplace
+=== Tue Feb 28 22:53:18 CST 2017 === amd64 crypto_hashblocks/sha256/inplace gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:23 CST 2017 === amd64 crypto_hashblocks/sha256/inplace g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:23 CST 2017 === amd64 crypto_hashblocks/sha256/inplace gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:53:26 CST 2017 === amd64 crypto_hashblocks/sha256/inplace gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:53:29 CST 2017 === amd64 crypto_hashblocks/sha256/ref
+=== Tue Feb 28 22:53:30 CST 2017 === amd64 crypto_hashblocks/sha256/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:36 CST 2017 === amd64 crypto_hashblocks/sha256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:36 CST 2017 === amd64 crypto_hashblocks/sha256/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:53:39 CST 2017 === amd64 crypto_hashblocks/sha256/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:53:42 CST 2017 === amd64 crypto_hashblocks/sha256 measuring
+=== Tue Feb 28 22:53:42 CST 2017 === amd64 crypto_hashblocks/sha512
+=== Tue Feb 28 22:53:42 CST 2017 === amd64 crypto_hashblocks/sha512/inplace
+=== Tue Feb 28 22:53:42 CST 2017 === amd64 crypto_hashblocks/sha512/inplace gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:48 CST 2017 === amd64 crypto_hashblocks/sha512/inplace g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:53:48 CST 2017 === amd64 crypto_hashblocks/sha512/inplace gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:53:51 CST 2017 === amd64 crypto_hashblocks/sha512/inplace gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:53:54 CST 2017 === amd64 crypto_hashblocks/sha512/ref
+=== Tue Feb 28 22:53:54 CST 2017 === amd64 crypto_hashblocks/sha512/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:00 CST 2017 === amd64 crypto_hashblocks/sha512/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:00 CST 2017 === amd64 crypto_hashblocks/sha512/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:54:04 CST 2017 === amd64 crypto_hashblocks/sha512/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:54:07 CST 2017 === amd64 crypto_hashblocks/sha512 measuring
+=== Tue Feb 28 22:54:07 CST 2017 === amd64 crypto_hash/sha256
+=== Tue Feb 28 22:54:07 CST 2017 === amd64 crypto_hash/sha256/ref
+=== Tue Feb 28 22:54:08 CST 2017 === amd64 crypto_hash/sha256/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:11 CST 2017 === amd64 crypto_hash/sha256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:14 CST 2017 === amd64 crypto_hash/sha256/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:54:16 CST 2017 === amd64 crypto_hash/sha256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:16 CST 2017 === amd64 crypto_hash/sha256/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:54:18 CST 2017 === amd64 crypto_hash/sha256 measuring
+=== Tue Feb 28 22:54:19 CST 2017 === amd64 crypto_hash/sha512
+=== Tue Feb 28 22:54:19 CST 2017 === amd64 crypto_hash/sha512/ref
+=== Tue Feb 28 22:54:19 CST 2017 === amd64 crypto_hash/sha512/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:23 CST 2017 === amd64 crypto_hash/sha512/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:23 CST 2017 === amd64 crypto_hash/sha512/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:54:26 CST 2017 === amd64 crypto_hash/sha512/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:26 CST 2017 === amd64 crypto_hash/sha512/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:54:28 CST 2017 === amd64 crypto_hash/sha512 measuring
+=== Tue Feb 28 22:54:28 CST 2017 === amd64 crypto_stream/aes128ctr
+=== Tue Feb 28 22:54:28 CST 2017 === amd64 crypto_stream/aes128ctr/core2
+=== Tue Feb 28 22:54:29 CST 2017 === amd64 crypto_stream/aes128ctr/core2 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:54:32 CST 2017 === amd64 crypto_stream/aes128ctr/core2 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:54:34 CST 2017 === amd64 crypto_stream/aes128ctr/core2 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:54:35 CST 2017 === amd64 crypto_stream/aes128ctr/portable
+=== Tue Feb 28 22:54:35 CST 2017 === amd64 crypto_stream/aes128ctr/portable gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:55:15 CST 2017 === amd64 crypto_stream/aes128ctr/portable g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:55:15 CST 2017 === amd64 crypto_stream/aes128ctr/portable g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:55:16 CST 2017 === amd64 crypto_stream/aes128ctr/portable gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:55:47 CST 2017 === amd64 crypto_stream/aes128ctr/portable g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:55:48 CST 2017 === amd64 crypto_stream/aes128ctr/portable g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:55:48 CST 2017 === amd64 crypto_stream/aes128ctr/portable gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:56:20 CST 2017 === amd64 crypto_stream/aes128ctr measuring
+=== Tue Feb 28 22:56:23 CST 2017 === amd64 crypto_stream/salsa20
+=== Tue Feb 28 22:56:23 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6
+=== Tue Feb 28 22:56:23 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:28 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:28 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:29 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:56:31 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:32 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:32 CST 2017 === amd64 crypto_stream/salsa20/amd64_xmm6 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:56:35 CST 2017 === amd64 crypto_stream/salsa20/ref
+=== Tue Feb 28 22:56:36 CST 2017 === amd64 crypto_stream/salsa20/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:40 CST 2017 === amd64 crypto_stream/salsa20/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:56:42 CST 2017 === amd64 crypto_stream/salsa20/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:56:45 CST 2017 === amd64 crypto_stream/salsa20/x86_xmm5
+=== Tue Feb 28 22:56:46 CST 2017 === amd64 crypto_stream/salsa20/x86_xmm5 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:49 CST 2017 === amd64 crypto_stream/salsa20/x86_xmm5 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:56:50 CST 2017 === amd64 crypto_stream/salsa20/x86_xmm5 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:56:51 CST 2017 === amd64 crypto_stream/salsa20 measuring
+=== Tue Feb 28 22:56:51 CST 2017 === amd64 crypto_stream/salsa2012
+=== Tue Feb 28 22:56:51 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6
+=== Tue Feb 28 22:56:51 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:56 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:57 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:56:57 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:56:59 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:00 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:00 CST 2017 === amd64 crypto_stream/salsa2012/amd64_xmm6 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:03 CST 2017 === amd64 crypto_stream/salsa2012/ref
+=== Tue Feb 28 22:57:04 CST 2017 === amd64 crypto_stream/salsa2012/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:08 CST 2017 === amd64 crypto_stream/salsa2012/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:57:10 CST 2017 === amd64 crypto_stream/salsa2012/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:13 CST 2017 === amd64 crypto_stream/salsa2012/x86_xmm5
+=== Tue Feb 28 22:57:14 CST 2017 === amd64 crypto_stream/salsa2012/x86_xmm5 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:17 CST 2017 === amd64 crypto_stream/salsa2012/x86_xmm5 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:57:18 CST 2017 === amd64 crypto_stream/salsa2012/x86_xmm5 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:18 CST 2017 === amd64 crypto_stream/salsa2012 measuring
+=== Tue Feb 28 22:57:19 CST 2017 === amd64 crypto_stream/salsa208
+=== Tue Feb 28 22:57:19 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6
+=== Tue Feb 28 22:57:19 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:24 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:24 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:25 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:57:27 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:27 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:28 CST 2017 === amd64 crypto_stream/salsa208/amd64_xmm6 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:31 CST 2017 === amd64 crypto_stream/salsa208/ref
+=== Tue Feb 28 22:57:31 CST 2017 === amd64 crypto_stream/salsa208/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:35 CST 2017 === amd64 crypto_stream/salsa208/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:57:37 CST 2017 === amd64 crypto_stream/salsa208/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:41 CST 2017 === amd64 crypto_stream/salsa208/x86_xmm5
+=== Tue Feb 28 22:57:41 CST 2017 === amd64 crypto_stream/salsa208/x86_xmm5 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:44 CST 2017 === amd64 crypto_stream/salsa208/x86_xmm5 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:57:45 CST 2017 === amd64 crypto_stream/salsa208/x86_xmm5 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:46 CST 2017 === amd64 crypto_stream/salsa208 measuring
+=== Tue Feb 28 22:57:46 CST 2017 === amd64 crypto_stream/xsalsa20
+=== Tue Feb 28 22:57:46 CST 2017 === amd64 crypto_stream/xsalsa20/ref
+=== Tue Feb 28 22:57:47 CST 2017 === amd64 crypto_stream/xsalsa20/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:52 CST 2017 === amd64 crypto_stream/xsalsa20/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:52 CST 2017 === amd64 crypto_stream/xsalsa20/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:53 CST 2017 === amd64 crypto_stream/xsalsa20/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:57:55 CST 2017 === amd64 crypto_stream/xsalsa20/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:57:58 CST 2017 === amd64 crypto_stream/xsalsa20/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:57:59 CST 2017 === amd64 crypto_stream/xsalsa20/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:00 CST 2017 === amd64 crypto_stream/xsalsa20 measuring
+=== Tue Feb 28 22:58:00 CST 2017 === amd64 crypto_onetimeauth/poly1305
+=== Tue Feb 28 22:58:00 CST 2017 === amd64 crypto_onetimeauth/poly1305/53
+=== Tue Feb 28 22:58:00 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:05 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:05 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:06 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:58:09 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:09 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:10 CST 2017 === amd64 crypto_onetimeauth/poly1305/53 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:58:12 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64
+=== Tue Feb 28 22:58:12 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:16 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:17 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:17 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:58:19 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:58:21 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:21 CST 2017 === amd64 crypto_onetimeauth/poly1305/amd64 g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:22 CST 2017 === amd64 crypto_onetimeauth/poly1305/ref
+=== Tue Feb 28 22:58:22 CST 2017 === amd64 crypto_onetimeauth/poly1305/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:29 CST 2017 === amd64 crypto_onetimeauth/poly1305/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:58:35 CST 2017 === amd64 crypto_onetimeauth/poly1305/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:58:52 CST 2017 === amd64 crypto_onetimeauth/poly1305/x86
+=== Tue Feb 28 22:58:53 CST 2017 === amd64 crypto_onetimeauth/poly1305/x86 gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:58:55 CST 2017 === amd64 crypto_onetimeauth/poly1305/x86 gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:58:56 CST 2017 === amd64 crypto_onetimeauth/poly1305/x86 gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:58:57 CST 2017 === amd64 crypto_onetimeauth/poly1305 measuring
+=== Tue Feb 28 22:58:58 CST 2017 === amd64 crypto_auth/hmacsha256
+=== Tue Feb 28 22:58:58 CST 2017 === amd64 crypto_auth/hmacsha256/ref
+=== Tue Feb 28 22:58:58 CST 2017 === amd64 crypto_auth/hmacsha256/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:59:03 CST 2017 === amd64 crypto_auth/hmacsha256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:59:04 CST 2017 === amd64 crypto_auth/hmacsha256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:59:04 CST 2017 === amd64 crypto_auth/hmacsha256/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:59:07 CST 2017 === amd64 crypto_auth/hmacsha256/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:59:09 CST 2017 === amd64 crypto_auth/hmacsha256 measuring
+=== Tue Feb 28 22:59:09 CST 2017 === amd64 crypto_auth/hmacsha512256
+=== Tue Feb 28 22:59:09 CST 2017 === amd64 crypto_auth/hmacsha512256/ref
+=== Tue Feb 28 22:59:10 CST 2017 === amd64 crypto_auth/hmacsha512256/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:59:15 CST 2017 === amd64 crypto_auth/hmacsha512256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:59:16 CST 2017 === amd64 crypto_auth/hmacsha512256/ref g++ -m64 -O3 -fomit-frame-pointer -funroll-loops
+=== Tue Feb 28 22:59:16 CST 2017 === amd64 crypto_auth/hmacsha512256/ref gcc -m64 -O -fomit-frame-pointer
+=== Tue Feb 28 22:59:19 CST 2017 === amd64 crypto_auth/hmacsha512256/ref gcc -m64 -fomit-frame-pointer
+=== Tue Feb 28 22:59:21 CST 2017 === amd64 crypto_auth/hmacsha512256 measuring
+=== Tue Feb 28 22:59:22 CST 2017 === amd64 crypto_secretbox/xsalsa20poly1305
+=== Tue Feb 28 22:59:22 CST 2017 === amd64 crypto_secretbox/xsalsa20poly1305/ref
+=== Tue Feb 28 22:59:22 CST 2017 === amd64 crypto_secretbox/xsalsa20poly1305/ref gcc -m64 -O3 -fomit-frame-pointer -funroll-loops

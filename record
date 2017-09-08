@@ -1,0 +1,20 @@
+lamsalab@quine:cs-214$ script transcript.txt
+Script started, file is transcript.txt
+lamsalab@quine:cs-214$ gcc cryptography.c -o cryptography -lsodium -Wall -g
+lamsalab@quine:cs-214$ ./cryptography 
+lamsalab@quine:cs-214$ gcc cryptography.c -o cryptography -lsodium -Wall -g
+lamsalab@quine:cs-214$ ./cryptography 
+lamsalab@quine:cs-214$ cd sender
+lamsalab@quine:sender$ gcc encryption.c -o encryption -lsodium -Wall -g
+lamsalab@quine:sender$ ./encryption 
+0
+ 0
+ lamsalab@quine:sender$ cd ..
+lamsalab@quine:cs-214$ cd receiver/
+lamsalab@quine:receiver$ gcc decryption.c -o decryption -lsodium -Wall -g
+lamsalab@quine:receiver$ ./decryption 
+0
+0
+lamsalab@quine:receiver$ diff message.txt validation.txt
+lamsalab@quine:receiver$ exit
+Script done, file is transcript.txt

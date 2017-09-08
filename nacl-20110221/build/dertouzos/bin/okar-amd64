@@ -1,0 +1,4 @@
+#!/bin/sh
+PATH="/home/lamsalab/cs-214/nacl-20110221/build/dertouzos/bin:/usr/sfw/bin:/usr/local/bin:/bin:/usr/bin:/usr/X11R6/bin:/usr/local/bin:/net/bin:."
+export PATH
+ar "$@"
